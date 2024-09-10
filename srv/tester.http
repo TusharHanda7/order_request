@@ -1,0 +1,19 @@
+GET http://localhost:4004/odata/v4/OrderService
+
+###Read service metadata
+GET http://localhost:4004/odata/v4/OrderService/$metadata
+
+###Get ANPR records
+GET http://localhost:4004/odata/v4/OrderService/Order
+
+
+
+###Get ANPR records
+POST http://localhost:4004/odata/v4/OrderService/Order
+Content-Type: application/json
+
+{
+      "SITE" : "AD04"
+}
+
+
